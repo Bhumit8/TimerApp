@@ -1,0 +1,204 @@
+@font-face{
+    font-family: digital-7;
+    src: url("digital-7\ \(italic\).ttf") format("truetype");
+}
+
+body{
+    background-image: url("woodback.jpg");
+}
+
+#timer-display{
+    display: table;
+    margin: auto;
+    margin-top: 0px;
+    background-image: url("Brown-Dark-Wood-Texture-Background-HD-Image.jpg");
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.9);
+}
+
+#timer1-background{
+    display: inline-block;
+    background-color: lightgrey;
+    padding: 40px;
+    margin-right: 120px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    border-radius: 30px;
+    box-shadow: 5px 10px 5px black inset;
+    position: relative;
+}
+
+#timer1-background span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+
+}
+
+#timer1-background span::before{
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 2px;
+    background: red;
+    animation: animate 2s linear infinite;
+    left: 10%;
+    box-shadow: 0 4px 8px 0 rgba(255, 0, 0, 0.9), 0 7px 15px 0 rgba(255, 0, 0, 0.9);
+}
+
+@keyframes animate{
+    0%{
+        transform: scaleX(0.7);
+        transform-origin: left;
+    }
+    20%{
+        transform: scaleX(0.7);
+        transform-origin: right;
+    }
+    35%{
+        transform: scaleX(0.3);
+        transform-origin: right;
+    }
+    50%{
+        transform: scaleX(0.7);
+        transform-origin: right;
+    }
+    70%{
+        transform: scaleX(0.7);
+        transform-origin: left;
+    }
+    85%{
+        transform: scaleX(0.3);
+        transform-origin: left;
+    }
+    100%{
+        transform: scaleX(0.7);
+        transform-origin: left;
+    }
+}
+
+#timer2-background{
+    display: inline-block;
+    margin-right: 50px;
+    background-color: lightgrey;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 5px 10px 5px black inset;
+    position: relative;
+}
+
+#timer2-background span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+
+}
+
+#timer2-background span::before{
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 2px;
+    background: red;
+    animation: animate 2s linear infinite;
+    left: 10%;
+    box-shadow: 0 4px 8px 0 rgba(255, 0, 0, 0.8), 0 6px 20px 0 rgba(255, 0, 0, 0.9);
+}
+
+#timer1-display{
+    font-family: digital-7;
+    font-size: 120px;
+    min-width: 380px;
+}
+
+#timer2-display{
+    font-family: digital-7;
+    font-size: 120px;
+    min-width: 380px;
+    
+}
+
+#timer1-millisec{
+    font-family: digital-7;
+    font-size: 50px;
+    float: right;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+#timer2-millisec{
+    font-family: digital-7;
+    font-size: 50px;
+    float: right;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+#timer-btns{
+    display: table;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.clockBtn{
+    height: 40px;
+    width: 190px;
+    margin: auto;
+    font-weight: bold;
+    font-size: 20px;
+    border-top: none;
+    border-right: black 1px solid;
+    border-left: black 1px solid;
+}
+
+.clockBtn:hover{
+    color: white;
+    background-color: rgb(22, 22, 22);
+    transition-duration: 0.2s;
+}
+
+.clockBtn:focus{
+    background-color: rgb(71, 71, 71);
+    outline: none;
+    color: white;
+}
+
+#time-input{
+    display: table;
+    margin: auto;
+    margin-top: 70px;
+}
+
+.timeInput{
+    width: 120px;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+}
+
+#player1-input{
+    display: inline-block;
+    margin-right: 190px;
+}
+
+#player2-input{
+    display: inline-block;
+}
+
+#errorDiv{
+    display: table;
+    color: red;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    margin: auto;
+    margin-top: 30px;
+}

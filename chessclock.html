@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Stopwatch App</title>
+        <link rel="stylesheet" href="chessclockstyle.css">
+    </head>
+    <body>
+
+        <div id="time-input">
+            <div id="player1-input">
+                <input class="timeInput" id="duration1-hours" type="number" placeholder="Hours" />
+                <input class="timeInput" id="duration1-minutes" type="number" placeholder="Minutes" />
+                <input class="timeInput" id="duration1-seconds" type="number" placeholder="Seconds" />
+            </div>
+            
+            <div id="player2-input">
+                <input class="timeInput" id="duration2-hours" type="number" placeholder="Hours" />
+                <input class="timeInput" id="duration2-minutes" type="number" placeholder="Minutes" />
+                <input class="timeInput" id="duration2-seconds" type="number" placeholder="Seconds" />
+            </div>
+            
+
+            
+        </div>
+        <div id="chess-clock">
+            
+            <div id="timer-display">
+                
+                <div id="timer1-background">
+                    <span id="indicator1"></span>
+                    <div id="timer1-display">00:00:00</div>
+                    <div id="timer1-millisec">00</div>
+                </div>
+                
+                <div id="timer2-background">
+                    <span id="indicator2"></span>
+                    <div id="timer2-display">00:00:00</div>
+                    <div id="timer2-millisec">00</div>
+                </div>
+
+                <div id="timer-btns">
+                    <button class="clockBtn" id="start-left">START LEFT</button>
+                    <button class="clockBtn" id="set-button">SET CLOCK</button>
+                    <button class="clockBtn" id="switch-button">SWITCH TURN</button>
+                    <button class="clockBtn" id="stop-button">STOP CLOCK</button>
+                    <button class="clockBtn" id="start-right">START RIGHT</button>
+                </div>
+                
+            </div>
+            
+                
+            
+            
+        </div>
+    
+        
+        <div id="errorDiv"></div>
+
+        <script src="chessclock.js"></script>
+    </body>
+</html>
